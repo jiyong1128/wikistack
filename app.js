@@ -36,7 +36,7 @@ app.use(bodyParser.json())
 // })
 // .catch(console.error.bind(console));
 
-db.sync({force: true})
+db.sync({ force: true })
 .then(() => {
     console.log('All tables created!');
     app.listen(3000, () => {

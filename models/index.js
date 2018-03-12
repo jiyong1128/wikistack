@@ -50,6 +50,8 @@ const User = db.define('user', {
 	}
 });
 
+Page.belongsTo(User, { as: 'author' });
+
 function generateUrlTitle (title) {
 	if (title) {
 	  return title.replace(/\s+/g, '_').replace(/\W/g, '');
