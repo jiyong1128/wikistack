@@ -7,6 +7,6 @@ const wiki = require('./wiki.js')
 //     res.
 // })
 router.use('/wiki', wiki)
-router.use('/user', user)
+router.use('/users', user)
 
 module.exports = router
